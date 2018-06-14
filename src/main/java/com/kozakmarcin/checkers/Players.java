@@ -6,14 +6,19 @@ import java.awt.*;
 
 public class Players {
 
-    private Player player1;
-    private Player player2;
-
-    private Player currentPlayer;
+    private Node<Player> currentPlayer;
 
     public Players(){
-        currentPlayer = player1 = preparePlayer(CheckersColor.BLACK);
-        player2 = preparePlayer(CheckersColor.WHITE);
+        Player player1 = preparePlayer(CheckersColor.BLACK);
+        Player player2 = preparePlayer(CheckersColor.WHITE);
+
+        Node<Player> playerNode1 = new Node<>(player1);
+        Node<Player> playerNode2 = new Node<>(player2);
+
+        playerNode1.setNext(playerNode2);
+        playerNode2.setNext(playerNode1);
+
+        currentPlayer = playerNode1;
     }
 
     private Player preparePlayer(Color color) {
@@ -21,11 +26,11 @@ public class Players {
     }
 
     public Player getCurrentPlayer(){
-        return currentPlayer;
+        return currentPlayer.get();
     }
 
-    public Player nextPlayer(){
-        return currentPlayer == player1 ? player2 : player1;
+    public void nextPlayer(){
+        currentPlayer = currentPlayer.getNext();
     }
 
 }
