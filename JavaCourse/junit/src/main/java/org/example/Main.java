@@ -5,6 +5,6 @@ public class Main {
         Testy testowa = new Testy();
 
 
-        System.out.println(testowa.sumDigits("aa11b33"));
+        System.out.println(testowa.maxBlock("abbCCCddBBBxx"));
     }
 }

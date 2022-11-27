@@ -6,6 +6,59 @@ import java.util.regex.Pattern;
 public class Testy {
 
 
+    public int maxBlock(String str) {
+
+
+
+        int max = 0;
+        int temp = 1;
+        for (int i = 0; i < str.length()-1; i++) {
+
+//            System.out.println(i + " " +str.charAt(i) + " "+str.charAt(i+1));
+            if (str.charAt(i)==str.charAt(i+1)) temp++;
+//            System.out.println(temp);
+            if (temp>max) max=temp;
+            if (str.charAt(i) != str.charAt(i+1)) temp = 1;
+        }
+        return max;
+//        int strLength = str.length();
+//        while (str.matches("(.)\\1+")){
+//            System.out.println(str);
+//            str = str.replaceFirst("(.)\\1+","");
+//            int temp = str.length();
+//            System.out.println(temp);
+//        }
+//
+//
+//        return -1;
+////        String[] tab = str.split("(.+)\\1");
+////        System.out.println( Arrays.toString(tab));
+    }
+
+
+    public String mirrorEnds(String string) {
+        StringBuilder stringBuilder = new StringBuilder();
+
+        for (int i = 0; i < string.length(); i++) {
+            if (string.charAt(i)== string.charAt(string.length()-i-1)) stringBuilder.append(string.charAt(i));
+            else break;
+        }
+
+        return stringBuilder.toString();
+    }
+
+
+    public String sameEnds(String string) {
+        String longestSub = "";
+        for (int i = 0; i <= string.length()/2; i++) {
+            String prefix =string.substring(0,i);
+            String suffix = string.substring(string.length()-i);
+            if (prefix.equals(suffix)) longestSub = prefix;
+        }
+
+        return longestSub;
+    }
+
     public int sumDigits(String str) {
         int sumInt = 0;
         Pattern pattern = Pattern.compile("\\d");
