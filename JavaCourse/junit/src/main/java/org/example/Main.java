@@ -5,6 +5,6 @@ public class Main {
         Testy testowa = new Testy();
 
 
-        System.out.println(testowa.maxBlock("abbCCCddBBBxx"));
+        System.out.println(testowa.pre4(new int[]{1, 2, 4, 1}));
     }
 }
