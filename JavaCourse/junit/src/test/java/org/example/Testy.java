@@ -1,9 +1,23 @@
 package org.example;
 
-class TestyTest {
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertAll;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class Testy {
+    @Test
+    void commonTwo() {
+        assertAll(() ->  assertEquals(2,new AP1().commonTwo(new String[]{"a", "c", "x"},new String[]{"b", "c", "d", "x"})),
+        () -> assertEquals(3,new AP1().commonTwo(new String[]{"a", "c", "x"},new String[]{"a", "b", "c", "x", "z"})),
+        () -> assertEquals(3,new AP1().commonTwo(new String[]{"a", "a", "b", "b", "c"},new String[]{"a", "b", "b", "b", "c"})));
+    }
 
 
-
+//    @Test
+//    void mergeTwo() {
+//        assertAll(() -> assertArrayEquals(new String[]{"a", "c", "f"},new Testy().mergeTwo(new String[]{"a", "c", "z"},new String[]{"c", "f", "z"},3)));
+//    }
 
 
 //    @Test
