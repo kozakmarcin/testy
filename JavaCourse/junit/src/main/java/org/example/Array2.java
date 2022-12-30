@@ -49,7 +49,7 @@ public class Array2 {
         return nums;
     }
     
-    https://codingbat.com/prob/p196976
+   // https://codingbat.com/prob/p196976
 
     public int[] withoutTen(int[] nums) {
         int[] newNums = new int[nums.length];
@@ -77,7 +77,7 @@ public class Array2 {
         return nums;
     }
 
-    https://codingbat.com/prob/p169506
+   // https://codingbat.com/prob/p169506
 
     public int[] notAlone(int[] nums, int val) {
         for (int i = 1; i <nums.length-1 ; i++) {

@@ -1,6 +1,7 @@
 package org.example;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class AP1 {
@@ -96,7 +97,7 @@ public class AP1 {
         return sum;
     }
     
-    https://codingbat.com/prob/p140485
+   // https://codingbat.com/prob/p140485
     
     public int scoresSpecial(int[] a, int[] b) {
         return maxScore(a)+maxScore(b);

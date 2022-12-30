@@ -1,7 +1,57 @@
 package org.example;
 
 public class Recursion {
-    
+
+    // https://codingbat.com/prob/p105722
+    public String endX(String str) {
+        if(str.length()<1 ) return "";
+        else if (str.charAt(0)=='x') return endX(str.substring(1) )  +"x";
+        else return str.charAt(0) + endX(str.substring(1)) ;
+    }
+
+
+    // https://codingbat.com/prob/p158175
+    public String pairStar(String str) {
+        if(str.length()<1 ) return "";
+        else if (str.length()==1) return ""+str.charAt(0);
+        else if (str.charAt(str.length()-1)==str.charAt(str.length()-2)) {
+            return pairStar(str.substring(0, str.length() - 1))+ "*"+str.charAt(str.length() - 1);
+        }
+        return pairStar(str.substring(0, str.length() - 1))+str.charAt(str.length() - 1);
+    }
+
+    // https://codingbat.com/prob/p183394
+
+    public String allStar(String str) {
+        if(str.length()<1 ) return "";
+        else if (str.length()==1) return ""+str.charAt(0);
+        return allStar(str.substring(0, str.length() - 1)) + "*"+str.charAt(str.length() - 1);
+    }
+
+    // https://codingbat.com/prob/p173469
+    public boolean array220(int[] nums, int index) {
+        if (index> nums.length-2 || nums.length<2) return false;
+        if(10*nums[index]!= nums[index+1]) return array220(nums, index+1);
+        return true;
+    }
+
+    // https://codingbat.com/prob/p135988
+
+    public int array11(int[] nums, int index) {
+        if (index> nums.length-1 || nums.length==0) return 0;
+        if (nums[index]==11) return 1+array11(nums,index+1);
+        else return array11(nums,index+1);
+    }
+
+    // https://codingbat.com/prob/p108997
+
+    public boolean array6(int[] nums, int index) {
+        if (index> nums.length-1 || nums.length==0) return false;
+        if (nums[index]!=6 ) return array6(nums,index+1);
+        else return true;
+    }
+
+
     // https://codingbat.com/prob/p118230
     
     public String noX(String str) {

@@ -30,7 +30,7 @@ public class String1 {
         return "";
     }
     
-    https://codingbat.com/prob/p110141
+    // https://codingbat.com/prob/p110141
     
     public String deFront(String str) {    
         if  (str.startsWith("ab")) return str;  

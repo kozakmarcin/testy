@@ -6,6 +6,8 @@ import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class Testy {
+
+
     @Test
     void commonTwo() {
         assertAll(() ->  assertEquals(2,new AP1().commonTwo(new String[]{"a", "c", "x"},new String[]{"b", "c", "d", "x"})),

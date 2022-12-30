@@ -158,7 +158,7 @@ public class Warmup2 {
     public int countXX(String str) {
         int sum = 0;
         for(int i = 0; i< str.length(); i++){
-            if (str.regionMatches(i,"xx",0,)) sum+=1;
+            if (str.regionMatches(i,"xx",0,2)) sum+=1;
         }
         return sum;
     }

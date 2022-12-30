@@ -51,7 +51,7 @@ public class String2 {
     public String oneTwo(String str) {
         char[] strTab = str.toCharArray();
         int length = str.length()/3;
-        StringBuilder sb = new StringBuilder()
+        StringBuilder sb = new StringBuilder();
         for (int i = 0; i < length*3; i+=3) {
             sb.append(strTab[ i+1]); sb.append(strTab[ i+2]);sb.append(strTab[ i]);
         }
@@ -120,7 +120,7 @@ public class String2 {
     public String repeatFront(String str, int n) {
         StringBuilder stringBuilder = new StringBuilder();
         for (int i = 0; i <n ; i++) {
-            stringBuilder.append(str.substring(0,n-i);
+            stringBuilder.append(str.substring(0,n-i));
         }
         return stringBuilder.toString();
     }
@@ -220,7 +220,11 @@ public class String2 {
     // https://codingbat.com/prob/p147448
 
     public int countHi(String str) {
-        if (str.contains())
+        int sumHi = 0;
+        for (int i = 0; i<str.length()-1; i++){
+            if(str.substring(i, i+2).equals("hi")) sumHi++;
+        }
+        return sumHi;
     }
 
     // https://codingbat.com/prob/p165312
