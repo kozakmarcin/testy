@@ -2,6 +2,8 @@ package org.example;
 
 public class String2 {
 
+    // https://codingbat.com/prob/p147538
+    
     public String wordEnds(String str, String word) {
         StringBuilder newStr = new StringBuilder();
         if (str.equals(word)) return "";
@@ -17,6 +19,8 @@ public class String2 {
         return newStr.toString();
     }
 
+    // https://codingbat.com/prob/p170829
+
     public String plusOut(String str, String word) {
         StringBuilder newStr = new StringBuilder();
         for (int i = 0; i < str.length(); i++) {
@@ -30,15 +34,19 @@ public class String2 {
 
     }
 
+    // https://codingbat.com/prob/p139564
+
     public String starOut(String str) {
         return str.replaceAll(".?\\*  +.?","");
     }
+
+    // https://codingbat.com/prob/p180759
 
     public String zipZap(String str) {
        return str.replaceAll("z\\wp","zp");
     }
 
-
+    // https://codingbat.com/prob/p122943
 
     public String oneTwo(String str) {
         char[] strTab = str.toCharArray();
@@ -50,6 +58,8 @@ public class String2 {
         return sb.toString();
     }
 
+    // https://codingbat.com/prob/p194491
+
     public boolean sameStarChar(String str) {
         boolean flag = true;
         for (int i = 1; i < str.length()-1; i++) {
@@ -60,6 +70,7 @@ public class String2 {
         return flag;
     }
 
+    // https://codingbat.com/prob/p129952
 
     public String getSandwich(String str) {
         if(!str.contains("bread")) return "";
@@ -67,8 +78,9 @@ public class String2 {
         return str.substring(str.indexOf("bread")+5,str.lastIndexOf("bread"));
     }
 
-    public boolean xyzMiddle(String str) {
+    // https://codingbat.com/prob/p159772
 
+    public boolean xyzMiddle(String str) {
         if (str.length() <3) return false;
         boolean flag = false;
         int index = 0;
@@ -82,7 +94,7 @@ public class String2 {
       return flag;
     }
 
-
+    // https://codingbat.com/prob/p136417
 
     public boolean prefixAgain(String str, int n) {
             for (int i = 0; i < str.length()-n; i++) {
@@ -90,6 +102,8 @@ public class String2 {
             }
             return false;
     }
+
+    // https://codingbat.com/prob/p109637
 
     public String repeatSeparator(String word, String sep, int count) {
         StringBuilder stringBuilder = new StringBuilder();
@@ -101,7 +115,7 @@ public class String2 {
         return stringBuilder.toString();
     }
 
-
+    // https://codingbat.com/prob/p128796
 
     public String repeatFront(String str, int n) {
         StringBuilder stringBuilder = new StringBuilder();
@@ -111,6 +125,8 @@ public class String2 {
         return stringBuilder.toString();
     }
 
+    // https://codingbat.com/prob/p152339
+
     public String repeatEnd(String str, int n) {
         StringBuilder stringBuilder = new StringBuilder();
         for (int i = 0; i <n ; i++) {
@@ -118,6 +134,8 @@ public class String2 {
         }
         return stringBuilder.toString();
     }
+
+    // https://codingbat.com/prob/p125185
 
     public String mixString(String a, String b) {
         StringBuilder sb = new StringBuilder();
@@ -133,6 +151,7 @@ public class String2 {
 
 
 
+    // https://codingbat.com/prob/p134250
 
     public boolean xyBalance(String str) {
         int xPos= -1;
@@ -146,6 +165,19 @@ public class String2 {
         return (xPos == -1 || yPos>xPos);
 
     }
+
+
+    // https://codingbat.com/prob/p175762
+
+    public boolean bobThere(String str) {
+        for (int i = 0; i < str.length()-2; i++) {
+        if (str.substring(i,i+3).matches("b\\wb")) return true;
+    }
+    return false;
+    }
+
+    // https://codingbat.com/prob/p136594
+
     public boolean xyzThere(String str) {
         boolean flag = false;
         if (str.equals("xyz")) return true;
@@ -157,9 +189,13 @@ public class String2 {
         return flag;
     }
 
+    // https://codingbat.com/prob/p126880
+
     public boolean endOther(String a, String b) {
         return (a.endsWith(b.toLowerCase())|| b.endsWith(a.toLowerCase()));
     }
+
+    // https://codingbat.com/prob/p123614
 
     public int countCode(String str) {
         int count = 0;
@@ -169,11 +205,25 @@ public class String2 {
         return count;
     }
 
+    // https://codingbat.com/prob/p111624
+
+    public boolean catDog(String str) {
+        int sumCat = 0;
+        int sumDog = 0;
+        for (int i = 0 ; i<str.length() -2;i++){
+            if(str.substring(i,i+3).equals("cat")) sumCat++;
+            if (str.substring(i,i+3).equals("dog")) sumDog++;
+        }
+    return (sumCat==sumDog);
+    }
+
+    // https://codingbat.com/prob/p147448
 
     public int countHi(String str) {
         if (str.contains())
     }
 
+    // https://codingbat.com/prob/p165312
 
     public String doubleChar(String str) {
         StringBuilder sb = new StringBuilder();
