@@ -1,7 +1,9 @@
 package org.example;
 
 public class Array3 {
-
+    
+    // https://codingbat.com/prob/p193817
+    
     public int countClumps(int[] nums) {
         int actual = -1;
         int sum = 0;
@@ -14,7 +16,8 @@ public class Array3 {
         return sum;
     }
 
-
+    // https://codingbat.com/prob/p196409
+    
     public int maxMirror(int[] nums) {
         int sum = 0;
         int sumMax = 0;
@@ -48,7 +51,6 @@ public class Array3 {
 
 
                         }
-
                     }
 
                     break;
@@ -63,7 +65,7 @@ public class Array3 {
 
 
 
-
+    // https://codingbat.com/prob/p104090
 
     public int[] seriesUp(int n) {
         int[] seriesArray = new int[n*(n + 1)/2];
@@ -77,6 +79,7 @@ public class Array3 {
         return seriesArray;
     }
 
+    // https://codingbat.com/prob/p155405
 
     public int[] squareUp(int n) {
         int[] squareArray = new int[n*n];
@@ -105,7 +108,7 @@ public class Array3 {
         return squareArray;
     }
 
-
+    // https://codingbat.com/prob/p134022
 
     public boolean linearIn(int[] outer, int[] inner) {
         int j = 0;
@@ -116,6 +119,8 @@ public class Array3 {
         }
         return j==inner.length;
     }
+    
+    // https://codingbat.com/prob/p158767
 
     public boolean canBalance(int[] nums) {
         int sumFirst = 0;
@@ -125,12 +130,13 @@ public class Array3 {
             for (int j = i+1; j <nums.length ; j++) {
                 sumSecond+=nums[j];
             }
-            if (sumFirst==sumSecond) return true;
+           if (sumFirst==sumSecond) return true;
         }
         return false;
     }
 
-
+    // https://codingbat.com/prob/p125819
+    
     public int[] fix45(int[] nums) {
         int maxChanged = -1;
         for (int i = 0; i < nums.length-1; i++) {
@@ -154,8 +160,7 @@ public class Array3 {
         return nums;
     }
 
-
-
+    // https://codingbat.com/prob/p159339
 
     public int[] fix34(int[] nums) {
         int maxChanged = 0;
@@ -170,12 +175,12 @@ public class Array3 {
                         break;
                     }
                 }
-                i++;
             }
         }
         return nums;
     }
 
+    // https://codingbat.com/prob/p189576
 
     public int maxSpan(int[] nums) {
         int span = 0;
