@@ -1,6 +1,49 @@
 package org.example;
 
-public class Recursion {
+public class Recursion1 {
+
+    // https://codingbat.com/prob/p143900
+
+    public int countHi2(String str) {
+        if(str.length()<2 ) return 0;
+        else if (str.equals("hi")) return 1;
+        String substring = str.substring(str.length()-2);
+        if (substring.equals("hi") && str.charAt(str.length()-3) !='x') return 1 +countHi2(str.substring(0, str.length() - 1));
+        return countHi2(str.substring(0, str.length() - 1));
+    }
+
+    //https://codingbat.com/prob/p104029
+
+    public String stringClean(String str) {
+        if(str.length()<2 ) return str.substring(0,str.length());
+        if (str.charAt(str.length()-1)==str.charAt(str.length()-2)) return stringClean(str.substring(0,str.length()-1)) ;
+        return stringClean(str.substring(0,str.length()-1)) +str.charAt(str.length()-1);
+    }
+
+    // https://codingbat.com/prob/p167015
+
+    public int count11(String str) {
+        if (str.length() <2) return 0;
+        if(str.endsWith("11")) return 1+count11(str.substring(0,str.length()-2));
+        return count11(str.substring(0,str.length()-1));
+    }
+
+
+    //https://codingbat.com/prob/p161124
+    public int countAbc(String str) {
+        if (str.length() <3) return 0;
+        if (str.endsWith("abc")||str.endsWith("aba") ) return 1+countAbc(str.substring(0,str.length()-1));
+        return countAbc(str.substring(0,str.length()-1));
+    }
+
+
+    // https://codingbat.com/prob/p154048
+
+    public int countPairs(String str) {
+        if (str.length() <3) return 0;
+        if(str.charAt(str.length()-1)==str.charAt(str.length()-3)) return 1+countPairs(str.substring(0,str.length()-1));
+        return countPairs(str.substring(0,str.length()-1));
+    }
 
     // https://codingbat.com/prob/p105722
     public String endX(String str) {

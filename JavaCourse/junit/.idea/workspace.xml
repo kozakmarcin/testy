@@ -5,21 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00f0e908-4eee-4b2d-b2fd-0f2030142b51" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/RecursionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AP1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AP1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Array1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Array1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Array2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Array2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Logic1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Logic1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Recursion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Recursion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/String1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/String1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/String2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/String2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Warmup2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Warmup2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/Testy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/Testy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Recursion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Recursion1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/RecursionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/Recursion1Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/example/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Testy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/TestyTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,10 +63,11 @@
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/../.." value="warcaby-ver2" />
+        <entry key="$PROJECT_DIR$/../.." value="karol" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -86,18 +78,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -157,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672256182029</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="30.12.2022 Recursion-1 array6 =&gt; endX">
+      <created>1672440026300</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1672440026300</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -218,24 +217,25 @@
     <MESSAGE value="04.12.2022" />
     <MESSAGE value="18.12.2022" />
     <MESSAGE value="28.12.2022" />
-    <option name="LAST_COMMIT_MESSAGE" value="28.12.2022" />
+    <MESSAGE value="30.12.2022 Recursion-1 array6 =&gt; endX" />
+    <option name="LAST_COMMIT_MESSAGE" value="30.12.2022 Recursion-1 array6 =&gt; endX" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Recursion.java</url>
-          <line>68</line>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Recursion1.java</url>
+          <line>78</line>
           <option name="timeStamp" value="49" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Recursion.java</url>
-          <line>58</line>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Recursion1.java</url>
+          <line>68</line>
           <option name="timeStamp" value="50" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Recursion.java</url>
-          <line>8</line>
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Recursion1.java</url>
+          <line>18</line>
           <option name="timeStamp" value="51" />
         </line-breakpoint>
       </breakpoints>

@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class RecursionTest {
+class Recursion1Test {
 
 //    @Test
 //    void array6True() {
@@ -19,7 +19,7 @@ class RecursionTest {
 
     @Test
     void array220True() {
-        assertAll(()-> assertTrue(new Recursion().array220(new int[]{1, 2, 20},0)),
-                ()->assertTrue(new Recursion().array220(new int[]{3, 30},0)));
+        assertAll(()-> assertTrue(new Recursion1().array220(new int[]{1, 2, 20},0)),
+                ()->assertTrue(new Recursion1().array220(new int[]{3, 30},0)));
     }
 }
