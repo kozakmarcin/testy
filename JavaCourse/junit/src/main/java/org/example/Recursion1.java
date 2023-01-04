@@ -2,6 +2,51 @@ package org.example;
 
 public class Recursion1 {
 
+    // https://codingbat.com/prob/p195413
+    public int strDist(String str, String sub) {
+        if (str.length()<sub.length()) return 0;
+        if (str.startsWith(sub) && str.endsWith(sub)) return str.length();
+        else if (!str.startsWith(sub)) return strDist(str.substring(1),sub);
+        else  return strDist(str.substring(0,str.length()-1),sub);
+
+    }
+
+
+    // https://codingbat.com/prob/p118182
+    public boolean strCopies(String str, String sub, int n) {
+        if (str.length()<sub.length()) return  n==0;
+        if (str.startsWith(sub) && n>0) return strCopies(str.substring(1),sub,n-1);
+        return strCopies(str.substring(1),sub,n);
+    }
+
+    // https://codingbat.com/prob/p186177
+
+    public int strCount(String str, String sub) {
+        if (str.length()<sub.length()) return 0;
+        if (str.startsWith(sub)) return  1+strCount(str.substring(sub.length()),sub);
+        return strCount(str.substring(1),sub);
+    }
+
+    // https://codingbat.com/prob/p183174
+
+    public boolean nestParen(String str) {
+        if (str.length()<1) return true;
+        if (str.startsWith("(") && str.endsWith(")")) return nestParen(str.substring(1,str.length()-1));
+        return false;
+    }
+
+
+
+    // https://codingbat.com/prob/p137918
+
+    public String parenBit(String str) {
+        if(str.length()<1 ) return "";
+        if(!str.endsWith(")")) return parenBit(str.substring(0,str.length()-1));
+        else  if(!str.startsWith("(")) return parenBit(str.substring(1));
+        else return str ;
+
+    }
+
     // https://codingbat.com/prob/p143900
 
     public int countHi2(String str) {
