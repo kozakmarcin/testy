@@ -2,9 +2,8 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        Recursion2 recursion = new Recursion2();
-
-        System.out.println(recursion.split53Alter(new int[] {3, 5, 8}) );
+        Map2 map2 = new Map2();
+        System.out.println(map2.wordLen(new String[]{"a", "bb", "a", "bb"}) );
 
     }
 }
